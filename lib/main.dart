@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_x_state_management/navigation_screen.dart';
+import 'package:get_x_state_management/list_screen.dart';
 
 import 'home_screen.dart';
 void main() {
@@ -13,7 +14,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
 
-      home: HomeScreen(),
+      home:ListScreen(),
+      // home: HomeScreen(),
     );
   }
 }

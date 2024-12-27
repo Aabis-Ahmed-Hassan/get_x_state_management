@@ -6,6 +6,13 @@ import 'package:get_x_state_management/controller/navigation_controller.dart';
 class NavigationScreen extends StatelessWidget {
  NavigationScreen({super.key});
 
+
+ // in this way, only one instance of getx will be created in the UI
+ // and if we want to use them in more screens, it will use the same object
+ // rather than creating a new object and consuming more ram
+ // We've to create the object for only once, then we'll be using instance variable
+ static NavigationScreen get instance => Get.find();
+
   final controller = Get.put(NavigationController());
 
   @override
